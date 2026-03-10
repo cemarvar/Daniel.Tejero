@@ -2,7 +2,6 @@
 const obras = [
   {
     id: 1,
-    date: { mon: 'Oct', day: '24' },
     title: 'Cómo diseñar tu sala',
     excerpt: 'Un recorrido por los principios fundamentales del diseño de interiores para crear espacios cálidos y funcionales.',
     img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80',
@@ -25,7 +24,6 @@ const obras = [
   },
   {
     id: 2,
-    date: { mon: 'Oct', day: '23' },
     title: 'Los mejores 5 colores para el interior de tu hogar',
     excerpt: 'Porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur adipiscing elit.',
     img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80',
@@ -48,7 +46,6 @@ const obras = [
   },
   {
     id: 3,
-    date: { mon: 'Oct', day: '21' },
     title: 'La magia de los sillones',
     excerpt: 'Aquí comienza tu texto. Puedes hacer clic en este punto y empezar a escribir sobre el poder de un buen sillón.',
     img: 'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?w=600&q=80',
@@ -69,7 +66,6 @@ const obras = [
   },
   {
     id: 4,
-    date: { mon: 'Oct', day: '19' },
     title: 'Usa la luz para un hogar cálido',
     excerpt: 'La iluminación es el elemento más infravalorado del interiorismo. Aprende a usarla a tu favor.',
     img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
@@ -92,7 +88,6 @@ const obras = [
   },
   {
     id: 5,
-    date: { mon: 'Sep', day: '30' },
     title: 'Arte textil para paredes',
     excerpt: 'Los tapices y piezas de arte textil vuelven con fuerza. Una tendencia con siglos de historia y todo el futuro por delante.',
     img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80',
@@ -113,7 +108,6 @@ const obras = [
   },
   {
     id: 6,
-    date: { mon: 'Sep', day: '15' },
     title: 'Plantas y arte: la simbiosis perfecta',
     excerpt: 'Cómo integrar elementos vegetales con obras de arte para crear interiores vivos y en constante transformación.',
     img: 'https://images.unsplash.com/photo-1545165375-568928071c24?w=600&q=80',
@@ -141,7 +135,7 @@ function renderCards() {
     <div class="card fade-in" onclick="openDetail(${o.id})" style="animation-delay:${(o.id-1)*.08}s">
       <div class="card-img-wrap">
         <img src="${o.img}" alt="${o.title}" loading="lazy"/>
-        <div class="card-badge"><span>${o.date.mon}</span><strong>${o.date.day}</strong></div>
+        
       </div>
       <div class="card-body">
         <h3 class="card-title">${o.title}</h3>
